@@ -7,7 +7,9 @@
 * [下载资源](https://github.com/venshine/wechat-lightapp#下载资源)
 * [破解说明](https://github.com/venshine/wechat-lightapp#破解说明)
 * [新建项目](https://github.com/venshine/wechat-lightapp#新建项目)
-* [开发教程](https://github.com/venshine/wechat-lightapp#开发教程)
+* [开发文档](https://github.com/venshine/wechat-lightapp#开发文档【官方】)
+* [学习教程](https://github.com/venshine/wechat-lightapp#学习教程)
+
 
 ## 下载资源
 * 开发工具【Windows/Mac】
@@ -46,7 +48,14 @@
 
 ![Demo](screenshot/wx-developer-tools.jpg)
 
-## 开发教程
+## 开发文档【官方】
+* [简易教程](https://mp.weixin.qq.com/debug/wxadoc/dev/?t=1474644083132)
+* [框架](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/MINA.html?t=1474643026176)
+* [组件](https://mp.weixin.qq.com/debug/wxadoc/dev/component/?t=1474644089682)
+* [API](https://mp.weixin.qq.com/debug/wxadoc/dev/api/?t=1474644087418)
+* [工具](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/devtools.html?t=1474644084689)
+
+## 学习教程
 * [微信小程序「官方示例代码」浅析【上】](http://mp.weixin.qq.com/s?__biz=MjM5Mjg4NDMwMA==&mid=2652974082&idx=1&sn=47c7f672caf629cd846e315b8df2b1c5&scene=21#wechat_redirect)
 * [微信小程序剖析【下】：运行机制](http://mp.weixin.qq.com/s?__biz=MjM5Mjg4NDMwMA==&mid=2652974093&idx=1&sn=0570a243304ea8bb7d1b636624886fb1&scene=21#wechat_redirect)
 * [开发微信小程序的必备技能图谱](http://geek.csdn.net/news/detail/103138)
