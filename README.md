@@ -7,6 +7,7 @@
 * [下载资源](https://github.com/venshine/wechat-lightapp#下载资源)
 * [破解说明](https://github.com/venshine/wechat-lightapp#破解说明)
 * [新建项目](https://github.com/venshine/wechat-lightapp#新建项目)
+* [开发教程](https://github.com/venshine/wechat-lightapp#开发教程)
 
 ## 下载资源
 * 开发工具【Windows/Mac】
@@ -44,5 +45,16 @@
 点击添加项目即可完成新建项目，下图是运行demo程序的界面。
 
 ![Demo](screenshot/wx-developer-tools.jpg)
+
+## 开发教程
+* [微信小程序「官方示例代码」浅析【上】](http://mp.weixin.qq.com/s?__biz=MjM5Mjg4NDMwMA==&mid=2652974082&idx=1&sn=47c7f672caf629cd846e315b8df2b1c5&scene=21#wechat_redirect)
+* [微信小程序剖析【下】：运行机制](http://mp.weixin.qq.com/s?__biz=MjM5Mjg4NDMwMA==&mid=2652974093&idx=1&sn=0570a243304ea8bb7d1b636624886fb1&scene=21#wechat_redirect)
+* [开发微信小程序的必备技能图谱](http://geek.csdn.net/news/detail/103138)
+* [抢先看：微信官方发布的微信应用号（小程序）设计规范](http://www.woshipm.com/ucd/418190.html)
+* [首个微信小程序开发教程](http://gold.xitu.io/entry/57e34d6bd2030900691e9ad7)
+* [微信公众平台 |小程序 API文档](http://wxopen.notedown.cn/)
+* [微信小程序开发教程！](https://xituqu.com/508.html)
+* [微信小程序怎么开发？玩物志用一个上午上线了电商应用](http://www.ifanr.com/721124)
+* [微信小程序，一个有局限的类似 React Native 轮子！](http://www.jianshu.com/p/060c6f3dd4e8)
 
 
