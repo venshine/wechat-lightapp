@@ -4,9 +4,9 @@
 大纲
 --
 
-* 下载资源
-* 破解说明
-* 新建项目
+* [下载资源](https://github.com/venshine/wechat-lightapp#下载资源)
+* [破解说明](https://github.com/venshine/wechat-lightapp#破解说明)
+* [新建项目](https://github.com/venshine/wechat-lightapp#新建项目)
 
 ## 下载资源
 * 开发工具【Windows/Mac】
