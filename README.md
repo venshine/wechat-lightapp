@@ -7,7 +7,7 @@
 * [下载资源](https://github.com/venshine/wechat-lightapp#下载资源)
 * [破解说明](https://github.com/venshine/wechat-lightapp#破解说明)
 * [新建项目](https://github.com/venshine/wechat-lightapp#新建项目)
-* [开发文档](https://github.com/venshine/wechat-lightapp#开发文档【官方】)
+* [开发文档](https://github.com/venshine/wechat-lightapp#开发文档官方)
 * [学习教程](https://github.com/venshine/wechat-lightapp#学习教程)
 
 
