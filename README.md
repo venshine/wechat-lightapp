@@ -1,6 +1,8 @@
 微信小程序（应用号）开发
 ==
 
+[微信公众平台 · 小程序文档](https://github.com/venshine/wechat-lightapp/wiki/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%B9%B3%E5%8F%B0-%C2%B7-%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%96%87%E6%A1%A3)
+
 大纲
 --
 
