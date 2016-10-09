@@ -18,10 +18,10 @@
 * [开发工具](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=1474644089359)
 
 ## ~~下载资源~~
-* 开发工具【Windows/Mac】
+* ~~开发工具【Windows/Mac】~~
 	* Github：[https://github.com/venshine/wechat-lightapp/tree/master/ide](https://github.com/venshine/wechat-lightapp/tree/master/ide)
 	* 百度：[https://pan.baidu.com/s/1o7BVBQU](https://pan.baidu.com/s/1o7BVBQU) （密码: e5m1）
-* 破解文件
+* ~~破解文件~~
     * Github：[https://github.com/venshine/wechat-lightapp/tree/master/crack](https://github.com/venshine/wechat-lightapp/tree/master/crack)
     * 百度：[https://pan.baidu.com/s/1gfPruMn](https://pan.baidu.com/s/1gfPruMn) （密码: jkc1）
 * Demo
