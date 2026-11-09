@@ -7,7 +7,7 @@
 --
 
 * [官方资源](https://github.com/venshine/wechat-lightapp#官方资源)
-* [Demo](https://github.com/venshine/wechat-lightapp#demo)
+* [官方示例](https://github.com/venshine/wechat-lightapp#官方示例)
 * [新建项目](https://github.com/venshine/wechat-lightapp#新建项目)
 * [开发文档](https://github.com/venshine/wechat-lightapp#开发文档官方)
 * [学习教程](https://github.com/venshine/wechat-lightapp#学习教程)
@@ -16,20 +16,11 @@
 * [官方文档](https://developers.weixin.qq.com/miniprogram/dev/framework/)
 * [开发工具下载](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)：请从官方渠道下载最新版开发者工具
 
-## Demo
-* [demo 目录](https://github.com/venshine/wechat-lightapp/tree/master/demo)
+## 官方示例
+* [wechat-miniprogram/miniprogram-demo](https://github.com/wechat-miniprogram/miniprogram-demo)：微信官方开源的组件 / API / 云开发示例（MIT 协议）。本仓库早期附带的 demo 来源与授权不明，已移除。
 
 ## 新建项目
-
-![新建项目](screenshot/wx-developer-tools-create.jpg)
-
-* AppID：随意
-* 项目名称：随意
-* 本地开发目录：选择一个目录（注：可以选择demo目录）
-
-点击添加项目即可完成新建项目，下图是运行demo程序的界面。
-
-![Demo](screenshot/wx-developer-tools.jpg)
+请参考官方[快速开始](https://developers.weixin.qq.com/miniprogram/dev/framework/quickstart/)。
 
 ## 开发文档【官方】
 * [简易教程](https://mp.weixin.qq.com/debug/wxadoc/dev/?t=1474644083132)
