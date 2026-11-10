@@ -1,0 +1,16 @@
+<view class="page">
+  <demo-card title="这是分包里的页面" desc="首次进入时才下载 packageSub；首页的 preloadRule 会在进入首页后预下载它">
+    <view class="row">
+      <text class="label">页面路径</text>
+      <text class="value">{{route}}</text>
+    </view>
+    <view class="row">
+      <text class="label">进入耗时</text>
+      <text class="value">{{cost}} ms</text>
+    </view>
+    <view class="hint">
+      分包规则：整个小程序所有分包大小不超过 30M，单个分包 / 主包不超过 2M（以官方文档为准）。
+      分包页面可以使用主包的公共组件，主包不能直接引用分包内的资源。
+    </view>
+  </demo-card>
+</view>

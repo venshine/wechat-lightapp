@@ -1,0 +1,63 @@
+.input {
+  flex: 1;
+  margin-left: 32rpx;
+  text-align: right;
+  color: var(--text);
+}
+
+.slider {
+  flex: 1;
+  margin-left: 32rpx;
+}
+
+.choice {
+  margin-right: 32rpx;
+  color: var(--text);
+}
+
+.area {
+  width: 100%;
+  min-height: 120rpx;
+  margin-top: 16rpx;
+  padding: 16rpx;
+  box-sizing: border-box;
+  border-radius: 12rpx;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.swiper {
+  height: 240rpx;
+  border-radius: 16rpx;
+  overflow: hidden;
+}
+
+.slide {
+  height: 240rpx;
+  line-height: 240rpx;
+  text-align: center;
+  color: #ffffff;
+  font-size: 56rpx;
+  font-weight: 700;
+}
+
+.hscroll {
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+}
+
+.chip {
+  display: inline-block;
+  min-width: 96rpx;
+  margin-right: 16rpx;
+  padding: 16rpx 0;
+  border-radius: 12rpx;
+  background-color: var(--bg);
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.native-btn {
+  margin-bottom: 24rpx;
+}

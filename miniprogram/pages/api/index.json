@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "接口",
+  "usingComponents": {
+    "demo-card": "/components/demo-card/index"
+  }
+}

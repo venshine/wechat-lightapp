@@ -1,0 +1,38 @@
+.btn {
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 16rpx;
+  background-color: var(--accent);
+  color: #ffffff;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  color: var(--accent-ink);
+  border: 1rpx solid var(--accent);
+}
+
+.counter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn.small {
+  width: 80rpx;
+}
+
+.num {
+  min-width: 96rpx;
+  text-align: center;
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.tip {
+  margin-left: 24rpx;
+  font-size: 24rpx;
+  color: var(--sub);
+}

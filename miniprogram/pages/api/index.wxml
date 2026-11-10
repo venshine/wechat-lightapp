@@ -1,0 +1,36 @@
+<view class="page">
+  <demo-card title="系统信息（新版 API）" desc="getWindowInfo / getDeviceInfo / getAppBaseInfo / getSystemSetting，替代已停止维护的 getSystemInfo">
+    <view class="row" wx:for="{{infoRows}}" wx:key="k">
+      <text class="label">{{item.k}}</text>
+      <text class="value">{{item.v}}</text>
+    </view>
+    <view class="btn secondary" bind:tap="refreshInfo">刷新</view>
+  </demo-card>
+
+  <demo-card title="本地存储" desc="wx.setStorageSync / getStorageSync / removeStorageSync">
+    <view class="row">
+      <text class="label">已存次数</text>
+      <text class="value">{{visits}}</text>
+    </view>
+    <view class="btn" bind:tap="addVisit">累加并写入</view>
+    <view class="btn secondary" bind:tap="clearVisit">清除</view>
+  </demo-card>
+
+  <demo-card title="交互反馈" desc="showToast / showModal / showActionSheet">
+    <view class="btn" bind:tap="toast">Toast</view>
+    <view class="btn" bind:tap="modal">Modal</view>
+    <view class="btn" bind:tap="sheet">ActionSheet</view>
+    <view wx:if="{{feedback}}" class="hint">结果：{{feedback}}</view>
+  </demo-card>
+
+  <demo-card title="Mock 请求" desc="本地模拟网络请求，演示加载 / 成功 / 失败三态；真实 wx.request 需要配置合法域名">
+    <view class="btn" bind:tap="load">请求成功</view>
+    <view class="btn secondary" bind:tap="loadFail">请求失败</view>
+    <view wx:if="{{loading}}" class="hint">加载中…</view>
+    <view wx:if="{{error}}" class="hint err">{{error}}</view>
+    <view class="row" wx:for="{{articles}}" wx:key="id">
+      <text class="label">{{item.title}}</text>
+      <text class="value">{{item.author}}</text>
+    </view>
+  </demo-card>
+</view>

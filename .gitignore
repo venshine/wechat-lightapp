@@ -1,0 +1,18 @@
+# 依赖与构建产物
+node_modules/
+miniprogram_npm/
+
+# 开发者工具私有配置（个人 AppID、本地设置），官方建议不入库
+project.private.config.json
+
+# 私有内容与临时文件
+.private/
+.tmp/
+
+# 系统与编辑器
+.DS_Store
+.idea/
+.vscode/
+
+# AI 本地配置
+.claude/

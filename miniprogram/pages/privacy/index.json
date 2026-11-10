@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "隐私与授权",
+  "usingComponents": {
+    "demo-card": "/components/demo-card/index",
+    "privacy-dialog": "/components/privacy-dialog/index"
+  }
+}

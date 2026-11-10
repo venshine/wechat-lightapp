@@ -1,0 +1,31 @@
+{
+  "description": "项目配置文件，appid 为占位值；真实 AppID 请写在不入库的 project.private.config.json 中",
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "compileType": "miniprogram",
+  "projectname": "wechat-miniprogram-demo",
+  "appid": "touristappid",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "compileWorklet": true,
+    "useCompilerPlugins": ["typescript"],
+    "skylineRenderEnable": true,
+    "ignoreUploadUnusedFiles": true,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
+  },
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "condition": {}
+}

@@ -1,0 +1,5 @@
+<view class="card ext-class">
+  <view wx:if="{{title}}" class="title">{{title}}</view>
+  <view wx:if="{{desc}}" class="desc">{{desc}}</view>
+  <slot></slot>
+</view>

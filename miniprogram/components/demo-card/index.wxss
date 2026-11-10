@@ -1,0 +1,18 @@
+.card {
+  margin-bottom: 24rpx;
+  padding: 28rpx 32rpx;
+  border-radius: 24rpx;
+  background-color: var(--card);
+}
+
+.title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.desc {
+  margin: 8rpx 0 12rpx;
+  font-size: 24rpx;
+  color: var(--sub);
+}

@@ -1,0 +1,17 @@
+<view class="page">
+  <demo-card title="counter" desc="properties 传入范围，observers 校正数值，triggerEvent 通知父页面">
+    <counter id="counter" value="{{value}}" min="0" max="5" bind:change="onChange" />
+    <view class="hint">父页面收到的值：{{value}}</view>
+    <view class="btn secondary" bind:tap="reset">调用组件方法 reset()</view>
+    <view class="btn secondary" bind:tap="setMax">属性赋值 value=9（会被限制到 max）</view>
+  </demo-card>
+
+  <demo-card title="slot 与 externalClasses" desc="demo-card 本身就是示例：标题 / 描述由 properties 传入，内容走 slot" ext-class="highlight">
+    <view class="hint">卡片外层 class 通过 ext-class 传入</view>
+  </demo-card>
+
+  <demo-card title="behaviors" desc="counter 通过 logBehavior 获得 log 方法，可由父页面调用">
+    <view class="btn secondary" bind:tap="writeLog">让组件写一条日志</view>
+    <view class="mono" wx:for="{{logs}}" wx:key="*this">{{item}}</view>
+  </demo-card>
+</view>

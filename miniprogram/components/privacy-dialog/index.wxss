@@ -1,0 +1,73 @@
+.btn {
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 16rpx;
+  background-color: var(--accent);
+  color: #ffffff;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  color: var(--accent-ink);
+  border: 1rpx solid var(--accent);
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog {
+  width: 600rpx;
+  padding: 40rpx;
+  border-radius: 24rpx;
+  background-color: var(--card);
+}
+
+.title {
+  font-size: 34rpx;
+  font-weight: 600;
+  text-align: center;
+}
+
+.content {
+  margin: 24rpx 0 32rpx;
+  font-size: 28rpx;
+  color: var(--sub);
+}
+
+.link {
+  color: var(--accent-ink);
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.half {
+  width: 240rpx;
+}
+
+.agree {
+  width: 240rpx;
+  height: 80rpx;
+  margin: 0;
+  padding: 0;
+  line-height: 80rpx;
+  border-radius: 16rpx;
+  background-color: var(--accent);
+  color: #ffffff;
+  font-size: 28rpx;
+}

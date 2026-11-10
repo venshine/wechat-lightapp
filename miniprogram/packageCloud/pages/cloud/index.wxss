@@ -1,0 +1,6 @@
+.env {
+  padding: 20rpx 24rpx;
+  border-radius: 12rpx;
+  background-color: var(--bg);
+  color: var(--text);
+}

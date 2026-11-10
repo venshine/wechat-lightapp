@@ -1,0 +1,66 @@
+<view class="page">
+  <demo-card title="表单" desc="input / switch / slider / radio / checkbox / textarea">
+    <view class="row">
+      <text class="label">输入</text>
+      <input class="input" placeholder="输入文字" value="{{text}}" bindinput="onInput" />
+    </view>
+    <view class="row">
+      <text class="label">开关</text>
+      <switch checked="{{on}}" color="#07c160" bindchange="onSwitch" />
+    </view>
+    <view class="row">
+      <text class="label">滑块 {{volume}}</text>
+      <slider class="slider" value="{{volume}}" show-value="{{false}}" bindchanging="onSlider" bindchange="onSlider" />
+    </view>
+    <view class="row">
+      <radio-group bindchange="onRadio">
+        <label wx:for="{{levels}}" wx:key="value" class="choice">
+          <radio value="{{item.value}}" checked="{{item.value === level}}" color="#07c160" />{{item.name}}
+        </label>
+      </radio-group>
+    </view>
+    <view class="row">
+      <checkbox-group bindchange="onCheck">
+        <label wx:for="{{fruits}}" wx:key="value" class="choice">
+          <checkbox value="{{item.value}}" checked="{{item.checked}}" color="#07c160" />{{item.name}}
+        </label>
+      </checkbox-group>
+    </view>
+    <textarea class="area" placeholder="多行输入" maxlength="60" bindinput="onInput" auto-height></textarea>
+    <view class="hint">当前：{{text || '空'}} · 级别 {{level}} · 已选 {{picked}}</view>
+  </demo-card>
+
+  <demo-card title="选择器" desc="picker 单列 / 日期">
+    <picker range="{{cities}}" value="{{cityIndex}}" bindchange="onCity">
+      <view class="row">
+        <text class="label">城市</text>
+        <text class="value">{{cities[cityIndex]}} ›</text>
+      </view>
+    </picker>
+    <picker mode="date" value="{{date}}" bindchange="onDate">
+      <view class="row">
+        <text class="label">日期</text>
+        <text class="value">{{date}} ›</text>
+      </view>
+    </picker>
+  </demo-card>
+
+  <demo-card title="轮播" desc="swiper：自动播放、指示点">
+    <swiper class="swiper" indicator-dots autoplay circular interval="3000">
+      <swiper-item wx:for="{{banners}}" wx:key="*this">
+        <view class="slide" style="background-color: {{item}};">{{index + 1}}</view>
+      </swiper-item>
+    </swiper>
+  </demo-card>
+
+  <demo-card title="滚动" desc="scroll-view：横向滚动与下拉刷新">
+    <scroll-view class="hscroll" scroll-x enable-flex>
+      <view wx:for="{{chips}}" wx:key="*this" class="chip">{{item}}</view>
+    </scroll-view>
+  </demo-card>
+
+  <demo-card title="按钮与进度" desc="button / progress">
+    <button class="native-btn" type="primary" bind:tap="onTap">原生 button</button>
+    <progress percent="{{percent}}" stroke-width="6" active show-info activeColor="#07c160" />
+  </demo-card>
+</view>

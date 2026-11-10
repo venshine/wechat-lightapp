@@ -1,0 +1,43 @@
+<view class="root" style="padding-top: {{statusBarHeight + 44}}px;">
+  <view class="navbar" style="height: {{statusBarHeight + 44}}px; padding-top: {{statusBarHeight}}px;">
+    <view class="back" bind:tap="back">‹ 返回</view>
+    <view class="nav-title">Skyline 与 worklet</view>
+  </view>
+
+  <scroll-view type="list" scroll-y class="list">
+    <view class="card">
+      <view class="title">当前渲染引擎：{{renderer}}</view>
+      <view class="hint">
+        <text wx:if="{{renderer === 'skyline'}}">已运行在 Skyline 下，下面的 worklet 动画由 UI 线程驱动。</text>
+        <text wx:else>当前回退到 WebView（基础库低于 3.0.2、PC 端、或开发者工具未开启 Skyline 调试），动画演示不可用。</text>
+      </view>
+    </view>
+
+    <view class="card">
+      <view class="title">手势 + worklet：拖动小球</view>
+      <view class="stage">
+        <pan-gesture-handler worklet:ongesture="onPan">
+          <view class="ball" id="ball">拖我</view>
+        </pan-gesture-handler>
+      </view>
+    </view>
+
+    <view class="card">
+      <view class="title">worklet 动画：timing / spring</view>
+      <view class="stage short">
+        <view class="box" id="box"></view>
+      </view>
+      <view class="btn" bind:tap="runTiming">timing 平移</view>
+      <view class="btn secondary" bind:tap="runSpring">spring 回弹</view>
+    </view>
+
+    <view class="card">
+      <view class="title">span 内联混排</view>
+      <text>文字里可以混排 <span class="tag">span 标签</span> 与普通文字，Skyline 下内联文本只能用 text / span。</text>
+    </view>
+
+    <view class="card" wx:for="{{items}}" wx:key="*this">
+      <text>scroll-view type="list" 列表项 {{item}}</text>
+    </view>
+  </scroll-view>
+</view>

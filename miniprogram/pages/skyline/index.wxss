@@ -1,0 +1,80 @@
+.root {
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--bg);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--card);
+}
+
+.back {
+  padding: 0 32rpx;
+  color: var(--accent-ink);
+}
+
+.nav-title {
+  flex: 1;
+  font-weight: 600;
+}
+
+.list {
+  height: 100%;
+}
+
+.card {
+  margin: 0 32rpx 24rpx;
+  padding: 28rpx 32rpx;
+  border-radius: 24rpx;
+  background-color: var(--card);
+}
+
+.card:first-child {
+  margin-top: 24rpx;
+}
+
+.title {
+  margin-bottom: 12rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.stage {
+  height: 240rpx;
+  position: relative;
+}
+
+.stage.short {
+  height: 120rpx;
+}
+
+.ball {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+  line-height: 120rpx;
+  text-align: center;
+  background-color: var(--accent);
+  color: #ffffff;
+}
+
+.box {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 16rpx;
+  background-color: var(--accent);
+}
+
+.tag {
+  color: var(--accent-ink);
+  font-weight: 600;
+}

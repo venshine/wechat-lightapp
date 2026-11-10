@@ -1,0 +1,3 @@
+.highlight {
+  border: 2rpx solid var(--accent);
+}

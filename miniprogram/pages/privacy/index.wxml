@@ -1,0 +1,30 @@
+<view class="page">
+  <demo-card title="隐私授权状态" desc="wx.getPrivacySetting 查询微信侧是否有待用户同意的隐私政策">
+    <view class="row">
+      <text class="label">需要授权</text>
+      <text class="value">{{needAuth === null ? '未查询' : needAuth ? '是' : '否'}}</text>
+    </view>
+    <view class="btn" bind:tap="check">查询 / 弹出授权</view>
+    <view class="btn secondary" bind:tap="openContract">查看隐私保护指引</view>
+    <view class="hint">
+      调用隐私接口前必须在小程序后台「设置 - 服务内容声明 - 用户隐私保护指引」声明对应信息，否则接口直接禁用；
+      测试号 / 游客模式没有该后台，下面的接口可能返回 errno 112。
+    </view>
+  </demo-card>
+
+  <demo-card title="隐私接口" desc="chooseMedia（相册）、chooseLocation（位置）、getClipboardData（剪贴板）">
+    <view class="btn" bind:tap="pickImage">从相册选图</view>
+    <view class="btn" bind:tap="pickLocation">选择位置</view>
+    <view class="btn" bind:tap="readClipboard">读取剪贴板</view>
+    <image wx:if="{{imagePath}}" class="preview" src="{{imagePath}}" mode="aspectFill" />
+    <view wx:if="{{result}}" class="mono">{{result}}</view>
+  </demo-card>
+
+  <demo-card title="合规要点" desc="详见 README「隐私合规」">
+    <view class="hint">1. 只在用户触发功能时才调用隐私接口，不在启动时批量调用。</view>
+    <view class="hint">2. 用户拒绝后要有降级路径，不要反复弹窗。</view>
+    <view class="hint">3. 隐私政策更新后新增接口，需要用户重新同意。</view>
+  </demo-card>
+
+  <privacy-dialog id="dialog" bind:agree="onAgree" bind:disagree="onDisagree" />
+</view>

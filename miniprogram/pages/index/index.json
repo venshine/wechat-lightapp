@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "小程序示例",
+  "usingComponents": {
+    "demo-card": "/components/demo-card/index"
+  }
+}

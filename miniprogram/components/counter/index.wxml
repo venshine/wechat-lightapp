@@ -1,0 +1,6 @@
+<view class="counter">
+  <view class="btn small" bind:tap="dec">-</view>
+  <view class="num">{{count}}</view>
+  <view class="btn small" bind:tap="inc">+</view>
+  <view class="tip">范围 {{min}} ~ {{max}}</view>
+</view>

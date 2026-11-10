@@ -1,0 +1,92 @@
+/* 全局主题变量：浅色默认，深色用 prefers-color-scheme 适配（WebView 与 Skyline 均支持） */
+page {
+  --bg: #f4f5f7;
+  --card: #ffffff;
+  --text: #1a1a1a;
+  --sub: #6b7280;
+  --line: #e5e7eb;
+  --accent: #07c160;
+  --accent-ink: #058a45;
+  --danger: #d93025;
+
+  background-color: var(--bg);
+  color: var(--text);
+  font-size: 28rpx;
+  line-height: 1.5;
+}
+
+@media (prefers-color-scheme: dark) {
+  page {
+    --bg: #111214;
+    --card: #1c1d20;
+    --text: #ececec;
+    --sub: #9ca3af;
+    --line: #2c2e33;
+    --accent: #2fd47e;
+    --accent-ink: #2fd47e;
+    --danger: #ff6b60;
+  }
+}
+
+.page {
+  padding: 24rpx 32rpx 64rpx;
+}
+
+.section-title {
+  margin: 32rpx 0 16rpx;
+  font-size: 26rpx;
+  color: var(--sub);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid var(--line);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  color: var(--text);
+}
+
+.value {
+  color: var(--sub);
+  font-size: 26rpx;
+}
+
+.btn {
+  margin: 12rpx 0;
+  padding: 0 32rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 16rpx;
+  background-color: var(--accent);
+  color: #ffffff;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  color: var(--accent-ink);
+  border: 1rpx solid var(--accent);
+}
+
+.mono {
+  font-family: Menlo, Consolas, monospace;
+  font-size: 24rpx;
+  color: var(--sub);
+  word-break: break-all;
+}
+
+.hint {
+  margin-top: 12rpx;
+  font-size: 24rpx;
+  color: var(--sub);
+}

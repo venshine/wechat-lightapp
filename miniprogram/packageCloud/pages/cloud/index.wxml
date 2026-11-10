@@ -1,0 +1,18 @@
+<view class="page">
+  <demo-card title="云环境" desc="填入云开发环境 ID 后初始化；环境 ID 只保存在本机缓存，不写入代码">
+    <input class="env" placeholder="例如 cloud1-xxxxxxxx" value="{{envId}}" bindinput="onEnv" />
+    <view class="btn" bind:tap="init">初始化云环境</view>
+    <view class="hint">{{status}}</view>
+  </demo-card>
+
+  <demo-card title="云函数 hello" desc="cloudfunctions/hello：返回调用者的 openid、appid 与服务器时间">
+    <view class="btn" bind:tap="callHello">调用 hello</view>
+    <view wx:if="{{helloResult}}" class="mono">{{helloResult}}</view>
+  </demo-card>
+
+  <demo-card title="云数据库" desc="集合 demo_notes：需要先在云开发控制台创建集合">
+    <view class="btn" bind:tap="addNote">添加一条笔记</view>
+    <view class="btn secondary" bind:tap="listNotes">读取最近 5 条</view>
+    <view class="mono" wx:for="{{notes}}" wx:key="_id">{{item.text}}</view>
+  </demo-card>
+</view>

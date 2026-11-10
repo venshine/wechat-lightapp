@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "云开发",
+  "usingComponents": {
+    "demo-card": "/components/demo-card/index"
+  }
+}

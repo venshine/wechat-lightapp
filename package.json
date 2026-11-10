@@ -1,0 +1,16 @@
+{
+  "name": "wechat-miniprogram-demo",
+  "version": "2.0.0",
+  "private": true,
+  "description": "微信小程序现代化示例：TypeScript、Skyline、自定义组件、分包、云开发与隐私授权",
+  "license": "Apache-2.0",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test:e2e": "node scripts/e2e.js"
+  },
+  "devDependencies": {
+    "miniprogram-api-typings": "^5.3.1",
+    "miniprogram-automator": "^0.13.0",
+    "typescript": "^7.0.2"
+  }
+}

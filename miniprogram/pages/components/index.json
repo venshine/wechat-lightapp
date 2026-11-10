@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "组件",
+  "usingComponents": {
+    "demo-card": "/components/demo-card/index"
+  }
+}

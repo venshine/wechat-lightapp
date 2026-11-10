@@ -1,0 +1,18 @@
+<view wx:if="{{visible}}" class="mask">
+  <view class="dialog">
+    <view class="title">用户隐私保护提示</view>
+    <view class="content">
+      使用「{{referrer}}」前，请阅读并同意
+      <text class="link" bind:tap="openContract">{{contractName || '《用户隐私保护指引》'}}</text>。
+    </view>
+    <view class="actions">
+      <view class="btn secondary half" bind:tap="onDisagree">不同意</view>
+      <button
+        id="agree-btn"
+        class="agree"
+        open-type="agreePrivacyAuthorization"
+        bind:agreeprivacyauthorization="onAgree"
+      >同意</button>
+    </view>
+  </view>
+</view>

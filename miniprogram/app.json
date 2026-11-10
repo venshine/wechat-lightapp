@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/components/index",
+    "pages/api/index",
+    "pages/custom/index",
+    "pages/skyline/index",
+    "pages/privacy/index"
+  ],
+  "subPackages": [
+    {
+      "root": "packageSub",
+      "name": "sub",
+      "pages": ["pages/hello/index"]
+    },
+    {
+      "root": "packageCloud",
+      "name": "cloud",
+      "pages": ["pages/cloud/index"]
+    }
+  ],
+  "preloadRule": {
+    "pages/index/index": {
+      "network": "all",
+      "packages": ["sub"]
+    }
+  },
+  "window": {
+    "navigationBarTitleText": "小程序示例",
+    "navigationBarBackgroundColor": "@navBgColor",
+    "navigationBarTextStyle": "@navTxtStyle",
+    "backgroundColor": "@bgColor",
+    "backgroundTextStyle": "@bgTxtStyle"
+  },
+  "darkmode": true,
+  "themeLocation": "theme.json",
+  "style": "v2",
+  "lazyCodeLoading": "requiredComponents",
+  "componentFramework": "glass-easel",
+  "glassEaselWebview": true,
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "defaultContentBox": true,
+      "tagNameStyleIsolation": "legacy",
+      "enableScrollViewAutoSize": true,
+      "keyframeStyleIsolation": "legacy"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,20 @@
+.hero {
+  padding: 32rpx 8rpx 8rpx;
+}
+
+.hero-title {
+  font-size: 44rpx;
+  font-weight: 700;
+}
+
+.hero-sub {
+  margin-top: 8rpx;
+  font-size: 24rpx;
+  color: var(--sub);
+}
+
+.go {
+  padding-top: 8rpx;
+  color: var(--accent-ink);
+  font-size: 28rpx;
+}
